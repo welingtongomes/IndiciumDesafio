@@ -7,11 +7,17 @@
 # Objetivos 
 
 Faça uma análise exploratória dos dados (EDA), demonstrando as principais características entre as variáveis e apresentando algumas hipóteses de negócio relacionadas. Seja criativo!
+
 Responda também às seguintes perguntas:
 Supondo que uma pessoa esteja pensando em investir em um apartamento para alugar na plataforma, onde seria mais indicada a compra?
 O número mínimo de noites e a disponibilidade ao longo do ano interferem no preço?
+
 Existe algum padrão no texto do nome do local para lugares de mais alto valor?
-Explique como você faria a previsão do preço a partir dos dados. Quais variáveis e/ou suas transformações você utilizou e por quê? Qual tipo de problema estamos resolvendo (regressão, classificação)? Qual modelo melhor se aproxima dos dados e quais seus prós e contras? Qual medida de performance do modelo foi escolhida e por quê?
+
+Explique como você faria a previsão do preço a partir dos dados. Quais variáveis e/ou suas transformações você utilizou e por quê? Qual tipo de problema estamos resolvendo (regressão, classificação)? Qual modelo melhor se aproxima dos dados e quais seus prós e contras? 
+
+Qual medida de performance do modelo foi escolhida e por quê?
+
 Supondo um apartamento com as seguintes características:
 
 {'id': 2595,
@@ -42,6 +48,9 @@ Para execução no google colab, basta realizar os comandos de importações à 
 * import seaborn as sns
 * import matplotlib.pyplot as plt
 * from ydata_profiling import ProfileReport
+* from sklearn.model_selection import train_test_split
+* from sklearn.tree import DecisionTreeRegressor
+* from sklearn.metrics import mean_squared_error
 
 Para executar localmente, faz-se necessária instalação das bibliotecas, por favor, realize os os passos abaixo:
 
@@ -58,3 +67,5 @@ Digite: pip install seaborn e aguarde a instalação;
 Digite: pip installmatplotlib e aguarde a instalação;
 
 Digite: pip install ydata_profiling e aguarde a instalação;
+
+Digite: pip install scikit-learn e aguarde a instalação;
